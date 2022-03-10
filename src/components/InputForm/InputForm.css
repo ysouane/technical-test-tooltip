@@ -2,12 +2,11 @@
   display: block;
   margin: auto;
   text-align: left;
-  max-width: 300px;
+  width: 300px;
   color: #2b5274;
 }
 
 .InputForm {
-  display: inline-block;
   border-radius: .2rem;
   width: 100%;
   border: 1px solid rgb(109, 108, 108);
