@@ -1,0 +1,15 @@
+.Button {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 0.1rem;
+  border: none;
+  text-align: center;
+  word-break: break-word;
+  width: 100%;
+  max-width: 100px;
+  max-height: 100px;
+  overflow: auto;
+  background-color: #6074f3;
+  color: #fff;
+  font-weight: bold;
+}
