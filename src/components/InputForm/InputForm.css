@@ -1,14 +1,21 @@
-.InputLabel {
+.InputForm__Label {
   display: block;
   margin: auto;
   text-align: left;
   width: 300px;
-  color: #2b5274;
+  color: #000;
 }
 
-.InputForm {
-  border-radius: .2rem;
+.InputForm__Label .InputForm__Label__Content {
+  display: block;
+  font-weight: bolder;
+  margin-bottom: 0.2rem;
+}
+
+.InputForm__Input {
+  display: inline-block;
+  border-radius: 0.2rem;
   width: 100%;
   border: 1px solid rgb(109, 108, 108);
-  padding: .5rem;
+  padding: 0.5rem;
 }

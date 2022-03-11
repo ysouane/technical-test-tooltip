@@ -16,36 +16,30 @@ const Tooltip = ({
 
   let timeout;
 
-  const handleMouseOver = () => {
-    console.log("onMouseOver");
-    timeout = setTimeout(() => {
-      setIsHover(true);
-    }, 300);
-  };
+  const displayOrRemoveTooltip = (event) => {
+    let { type } = event;
 
-  const handleMouseOut = () => {
-    console.log("onMouseOut");
-    clearTimeout(timeout);
-    setTimeout(() => {
-      setIsHover(false);
-    }, 300);
-  };
+    if (type === "mouseover" || type === "focus") {
+      timeout = setTimeout(() => {
+        setIsHover(true);
+      }, 300);
+    }
 
-  const handleFocus = () => {
-    // console.log("onFocus");
-  };
-
-  const handleBlur = () => {
-    // console.log("onBlur");
+    if (type === "mouseout" || type === "blur") {
+      clearTimeout(timeout);
+      setTimeout(() => {
+        setIsHover(false);
+      }, 300);
+    }
   };
 
   return (
     <div
       className="Tooltip"
-      onMouseOver={handleMouseOver}
-      onMouseOut={handleMouseOut}
-      onFocus={handleFocus}
-      onBlur={handleBlur}>
+      onMouseOver={displayOrRemoveTooltip}
+      onMouseOut={displayOrRemoveTooltip}
+      onFocus={displayOrRemoveTooltip}
+      onBlur={displayOrRemoveTooltip}>
       {children}
       {isActive && (
         <div

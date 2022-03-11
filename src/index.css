@@ -7,8 +7,8 @@ body,
 div,
 span,
 h1,
-h2,
 strong,
+a,
 ul,
 li,
 form,
@@ -27,10 +27,6 @@ h1 {
   font-size: 3rem;
 }
 
-h2 {
-  font-size: 2rem;
-}
-
-h1, h2 {
+h1 {
   color: #2b5274;
 }

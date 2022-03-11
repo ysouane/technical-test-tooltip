@@ -1,14 +1,22 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  position: relative;
   height: 100vh;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  text-align: center;
   width: auto;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+header .App_logo {
+  object-fit: cover;
 }
 
 .App__Form {
@@ -18,4 +26,8 @@ header {
 
 .App__Form__Input {
   margin-bottom: 1.5rem;
+}
+
+.App__TermsAndConditions {
+  margin-top: 1rem;
 }

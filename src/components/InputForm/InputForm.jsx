@@ -1,11 +1,11 @@
 import React from "react";
 import "./InputForm.css";
 
-const InputForm = ({ content }) => {
+const InputForm = ({ content, inputType }) => {
   return (
-    <label className="InputLabel">
-      <strong>{content}</strong>
-      <input className="InputForm" type="text" />
+    <label htmlFor={content} className="InputForm__Label">
+      <span className="InputForm__Label__Content">{content}</span>
+      <input id={content} className="InputForm__Input" type={inputType} />
     </label>
   );
 };
