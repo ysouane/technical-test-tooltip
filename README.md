@@ -1,4 +1,4 @@
-# Technical Test Tooltip - Unkle
+# Tooltip
 
 Projet contenant un composant tooltip employé pour apporter des informations complémentaires à des éléments en fonction du contexte.
 Cela a pour objectif d'éviter de surcharger l'interface et de rendre l'UX plus agréable aux utilisateurs.
